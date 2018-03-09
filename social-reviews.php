@@ -26,6 +26,7 @@ add_action( 'wp_enqueue_scripts', 'frontend_scripts' );
 include_once( SOCIALRV_DIR . '/includes/menu.php' );
 include_once( SOCIALRV_DIR . '/includes/all_social_reviews.php' );
 include_once( SOCIALRV_DIR . '/includes/setting.php' );
+include_once( SOCIALRV_DIR . '/includes/social_reviews_manage.php' );
 
 
 	
