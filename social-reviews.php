@@ -23,15 +23,15 @@ define('SOCIALRV_MENU_ICON', 'dashicons-lock');
 
 add_action( 'wp_enqueue_scripts', 'frontend_scripts' );
 
+include_once( SOCIALRV_DIR . '/includes/activation.php');
+
 include_once( SOCIALRV_DIR . '/includes/menu.php' );
 include_once( SOCIALRV_DIR . '/includes/all_social_reviews.php' );
 include_once( SOCIALRV_DIR . '/includes/setting.php' );
 include_once( SOCIALRV_DIR . '/includes/social_reviews_manage.php' );
+include_once( SOCIALRV_DIR . '/includes/yelp_reviews_manage.php' );
 
-
-	
-	function setup() {
-
+function setup() {
 		// Admin Only Pages
 		if( is_admin() ) {
 			// Libraries
